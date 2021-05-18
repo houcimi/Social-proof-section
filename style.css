@@ -137,3 +137,39 @@ body {
 .bottom .testemonial:last-child {
     margin-top: 30px;
 }
+
+@media (max-width:676px) {
+    .container {
+        
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .top{
+        flex-direction: column;
+    }
+    .top .left h1 {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .top .left > p {
+        font-size: 13px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .top .right .reviewbox {
+        margin-bottom: 10px;
+        margin-left: 0;
+
+    }
+    .top .right .reviewbox:nth-child(2) {
+        margin-left: 0;
+    }
+    .top .right .reviewbox:last-child {
+        margin-left: 0;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+}
